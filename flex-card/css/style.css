@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.card-image {
+  /* flex-shrink: 0; */
+  width: 30%;
+}
+
+.card-image img {
+  display: block;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 70%;
+  padding: 16px;
+}
+
+.card-content a {
+  color: lightblue;
+  text-decoration: none;
+}
