@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* Viene applicato lung asse principale */
+  justify-content: space-between;
+  /* Viene applicato sull'asse secondaria */
+  align-items: flex-end;
+  width: 500px;
+  /* height: 500px; */
+  border: 2px solid black;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
