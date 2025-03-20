@@ -18,12 +18,15 @@
 .flex-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   /* Viene applicato lung asse principale */
   justify-content: space-between;
   /* Viene applicato sull'asse secondaria */
-  align-items: flex-end;
+  align-items: flex-start;
+  /* Applicato per gestire lo spazio tra le rige / le colonne nel caso sia attivo flex wrap */
+  align-content: space-around;
   width: 500px;
-  /* height: 500px; */
+  height: 500px;
   border: 2px solid black;
 }
 
