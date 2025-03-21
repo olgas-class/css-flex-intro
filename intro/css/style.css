@@ -17,22 +17,59 @@
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   /* Viene applicato lung asse principale */
   justify-content: space-between;
   /* Viene applicato sull'asse secondaria */
   align-items: flex-start;
   /* Applicato per gestire lo spazio tra le rige / le colonne nel caso sia attivo flex wrap */
   align-content: space-around;
-  width: 500px;
+  width: 80%;
   height: 500px;
   border: 2px solid black;
 }
 
 .item {
+  /* flex-grow: 0; */
   width: 100px;
   height: 100px;
+  /* flex-basis: 150px; */
   background-color: lightblue;
   border: 1px solid black;
+}
+
+/* 
+.item-2 {
+  flex-grow: 2;
+} */
+
+.item-1 {
+  align-self: center;
+}
+
+.item-7 {
+  flex-shrink: 0;
+}
+
+.col {
+  width: 20%;
+}
+
+.col-large {
+  flex-grow: 1;
+}
+
+.contenitore {
+  display: flex;
+  width: 500px;
+  height: 1200px;
+  border: 2px solid black;
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+
+.gatto {
+  width: 100%;
+  /* flex-basis: 100%; */
 }
